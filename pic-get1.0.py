@@ -35,7 +35,7 @@ def downLoad(each_pic):
         while n<=number:
             pic = r.get(each_pic[n-1],header)
             time.sleep(0.5)
-            with open('e:\\{}_picture\\{}_picture{}.jpg'.format(name,name,n),'wb') as f:
+            with open('e:\\{}_picture\\{}_picture{}.jpg'.format(name,name,n),'wb') as f:#文件保存到E盘
                 f.write(pic.content)            
                 print('{}/{}'.format(n,number))
                 n+=1
